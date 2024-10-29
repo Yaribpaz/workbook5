@@ -7,6 +7,9 @@ let kids = [
 ];
 
 
-kids.map(function(){
+//array of string that represent the fullname of a kid
+let kidNames = kids.map(function(kid){
+return kid.first + " " + kid.last;
+});
 
-})
+console.log(kidNames);
