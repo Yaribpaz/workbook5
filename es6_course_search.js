@@ -31,3 +31,23 @@ let courses = [
     Fee: "50.00",
   },
 ];
+
+//  When does the PROG200 course start?
+//  What is the title of the PROJ500 course?
+//  What are the titles of the courses that cost $50 or less?
+//  What  classes meet in "Classroom 1"?
+
+let prog200StartDate = courses.find((course) => course.CourseId === "PROG200").StartDate;
+console.log("PROG200 Start Date:", prog200StartDate);
+
+
+let proj500Title = courses.find((course) => course.CourseId === "PROJ500").Title;
+console.log("PROJ500 Title:", proj500Title);
+
+
+function isAffordable(course) {
+    return Number(course.Fee) <=50;
+}
+
+let affordableTitles = courses.filter(isAffordable);
+console.log("Courses that cost $50 or less:", affordableTitles);
