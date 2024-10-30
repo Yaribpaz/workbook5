@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Query Selector Practice</title>
+  </head>
+  <body>
+    <h1 id="main-title">Welcome to the JavaScript Selector Exercise</h1>
+    <p class="intro">This is an introduction paragraph.</p>
+    <p class="intro">This is another paragraph with the same class.</p>
+
+    <button id="click-button" class="action-button">Click Me!</button>
+
+    <div class="container">
+      <p>Inside a container div</p>
+    </div>
+
+    <script>
+      "use strict";
+      let mainTitle = document.querySelector("#main-title");
+      console.log(mainTitle);
+
+      let firstIntroParagraph = document.querySelector(".intro");
+      console.log(firstIntroParagraph);
+
+      let allIntroParagraphs = document.querySelectorAll(".intro");
+      console.log(allIntroParagraphs);
+
+      let button = document.querySelector("button");
+      console.log(button);
+
+      let allParagraphs = document.querySelectorAll("p");
+      console.log(allParagraphs);
+    </script>
+  </body>
+</html>

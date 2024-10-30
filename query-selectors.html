@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Query Selectors</title>
+    <style>
+      /* # is id 
+         . is class
+         div is tag
+      */
+      div {
+        border: 1px solid black;
+        height: 10rem;
+        width: 10rem;
+      }
+
+      #messageDiv {
+        background-color: red;
+      }
+      .message {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h3>Query Selectors</h3>
+      <p>Open DevTools to see what happened.</p>
+      <div id="messageDiv"></div>
+      <div class="message"></div>
+      <div></div>
+      <div class="message"></div>
+      <div></div>
+    </main>
+    <script>
+      "use script";
+      let messageDiv = document.querySelector("#messageDiv");
+      console.log(messageDiv);
+
+      let messageDivs = document.querySelector(".message");
+      console.log(messageDivs);
+
+      let divs = document.querySelectorAll("div");
+      console.log(divs);
+    </script>
+  </body>
+</html>
