@@ -98,7 +98,6 @@ function filterTable(data, tableBody, filter) {
 //It calls buildTable() with the filtered data to display only matching rows.
 //--------------------------------------
 
-
 buildTable(peruvianFoods, peruvianFoodsTBody);
 populateDropdown(peruvianFoods, typeFilter);
 
